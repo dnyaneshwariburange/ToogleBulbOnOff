@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <img id="syska" src="bulbooff.jpeg" alt="LED" onclick="changeState()"/>
+        <h2>you can turn on OR  turn off your syska bulb</h2>
+
+    </div>
+    
+    <script>
+        function changeState(){
+            var image = document.getElementById('syska');
+            if(image.src.match('bulbooff.jpeg')){
+                image.src="bulbon.jpeg"
+            }else{
+                image.src="bulbooff.jpeg"
+            }
+        }
+    </script>
+</body>
+</html>
